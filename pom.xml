@@ -13,6 +13,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 <modules>
 	<module>app</module>
+	<module>services</module>
 	<module>db</module>
 	<module>jstrict</module>
 </modules>
