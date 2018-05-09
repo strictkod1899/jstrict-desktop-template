@@ -28,23 +28,13 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 <dependencies>
 	<dependency>
 		<groupId>ru.strict</groupId>
-		<artifactId>jutils</artifactId>
-        <version>0.1.0</version>
-	</dependency>
-	<dependency>
-		<groupId>ru.strict</groupId>
-		<artifactId>jfile</artifactId>
-        <version>0.1.0</version>
+		<artifactId>services</artifactId>
+		<version>0.0.1</version>
 	</dependency>
 	<dependency>
 		<groupId>ru.strict</groupId>
 		<artifactId>jswing</artifactId>
         <version>0.1.0</version>
-	</dependency>
-	<dependency>
-		<groupId>ru.strict</groupId>
-		<artifactId>db</artifactId>
-		<version>0.0.1</version>
 	</dependency>
 	<dependency>
 		<groupId>junit</groupId>
