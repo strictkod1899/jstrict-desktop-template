@@ -11,22 +11,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>jswing</artifactId>
+    <artifactId>jpatterns</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
-    <name>jswing</name>
+    <name>jpatterns</name>
     <url>http://maven.apache.org</url>
-
-    <dependencies>
-        <dependency>
-            <groupId>ru.strict</groupId>
-            <artifactId>jutils</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ru.strict</groupId>
-            <artifactId>jfile</artifactId>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
