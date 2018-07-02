@@ -16,11 +16,4 @@
     <packaging>pom</packaging>
     <name>jdb</name>
     <url>http:\\maven.apache.org</url>
-
-    <modules>
-        <module>jdb-core</module>
-        <module>jdb-jdbc</module>
-        <module>jdb-spring</module>
-        <module>jdb-hibernate</module>
-    </modules>
 </project>

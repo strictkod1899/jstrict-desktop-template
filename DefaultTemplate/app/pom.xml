@@ -2,100 +2,87 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-<modelVersion>4.0.0</modelVersion>
-<groupId>ru.strict</groupId>
-<artifactId>app</artifactId>
-<packaging>jar</packaging>
-<version>0.0.1</version>
-<name>app</name>
-<url>http://maven.apache.org</url>
-
-<parent>
-	<groupId>ru.strict</groupId>
-	<artifactId>myproject</artifactId>
-	<version>0.0.1</version>
-	<relativePath>../pom.xml</relativePath>
-</parent>
-
-<repositories>
-	<repository>
-		<id>repo1.maven.org</id>
-		<url>http://repo1.maven.org/maven2</url>
-	</repository>
-</repositories>
-
-<dependencies>
-	<dependency>
+	<parent>
 		<groupId>ru.strict</groupId>
-		<artifactId>services</artifactId>
+		<artifactId>myproject</artifactId>
 		<version>0.0.1</version>
-	</dependency>
-	<dependency>
-		<groupId>ru.strict</groupId>
-		<artifactId>jswing</artifactId>
-        <version>0.1.0</version>
-	</dependency>
-	<dependency>
-		<groupId>junit</groupId>
-    	<artifactId>junit</artifactId>
-    	<version>4.12</version>
-		<scope>test</scope>
-	</dependency>
-</dependencies>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 
-<build>
-	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>${plugin.compiler.version}</version>
-			<configuration>
-				<source>${jdk.version}</source>
-				<target>${jdk.version}</target>
-			</configuration>
-		</plugin>
+	<artifactId>app</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+	<name>app</name>
+	<url>http://maven.apache.org</url>
 
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jar-plugin</artifactId>
-			<version>${plugin.jar.version}</version>
-			<configuration>
-				<archive>
-					<addMavenDescriptor>false</addMavenDescriptor>
-					<compress>true</compress>
-					<manifest>
-						<addClasspath>true</addClasspath>
-						<classpathPrefix>libs/</classpathPrefix>
-						<mainClass>ru.strict.Main</mainClass>
-					</manifest>
-				</archive>
-			</configuration>
-		</plugin>
+	<dependencies>
+		<dependency>
+			<groupId>ru.strict</groupId>
+			<artifactId>services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ru.strict</groupId>
+			<artifactId>jswing</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+	    	<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
 
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-dependency-plugin</artifactId>
-			<version>${plugin.dependency.version}</version>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${plugin.compiler.version}</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
 
-			<configuration>
-				<outputDirectory>${project.build.directory}/libs/</outputDirectory>
-				<overWriteReleases>false</overWriteReleases>
-				<overWriteSnapshots>false</overWriteSnapshots>
-				<overWriteIfNewer>true</overWriteIfNewer>
-			</configuration>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${plugin.jar.version}</version>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<compress>true</compress>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>libs/</classpathPrefix>
+							<mainClass>ru.strict.Main</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 
-			<executions>
-				<execution>
-					<id>copy-dependencies</id>
-					<phase>package</phase>
-					<goals>
-						<goal>copy-dependencies</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
-	</plugins>
-</build>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>${plugin.dependency.version}</version>
 
+				<configuration>
+					<outputDirectory>${project.build.directory}/libs/</outputDirectory>
+					<overWriteReleases>false</overWriteReleases>
+					<overWriteSnapshots>false</overWriteSnapshots>
+					<overWriteIfNewer>true</overWriteIfNewer>
+				</configuration>
+
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
