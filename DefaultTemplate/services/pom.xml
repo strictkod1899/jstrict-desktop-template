@@ -22,22 +22,19 @@
     		<groupId>ru.strict</groupId>
     		<artifactId>jutils</artifactId>
     	</dependency>
+        <dependency>
+            <groupId>ru.strict</groupId>
+            <artifactId>jpatterns</artifactId>
+        </dependency>
     	<dependency>
     		<groupId>ru.strict</groupId>
     		<artifactId>jfile</artifactId>
     	</dependency>
         <dependency>
             <groupId>ru.strict</groupId>
-            <artifactId>jpatterns</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ru.strict</groupId>
-            <artifactId>jneuralnetwork</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ru.strict</groupId>
             <artifactId>jdb-core</artifactId>
         </dependency>
+
     	<dependency>
     		<groupId>ru.strict</groupId>
     		<artifactId>db</artifactId>

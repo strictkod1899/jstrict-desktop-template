@@ -18,11 +18,10 @@
     <url>http://maven.apache.org</url>
 
     <modules>
-        <module>jutils</module>
         <module>jswing</module>
         <module>jdb</module>
         <module>jfile</module>
         <module>jpatterns</module>
-        <module>jneuralnetwork</module>
+        <module>jutils</module>
     </modules>
 </project>

@@ -45,22 +45,17 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
-                <artifactId>jfile</artifactId>
-                <version>0.1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.strict</groupId>
                 <artifactId>jpatterns</artifactId>
                 <version>0.1.0</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
-                <artifactId>jswing</artifactId>
+                <artifactId>jfile</artifactId>
                 <version>0.1.0</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
-                <artifactId>jneuralnetwork</artifactId>
+                <artifactId>jswing</artifactId>
                 <version>0.1.0</version>
             </dependency>
             <dependency>
@@ -73,25 +68,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                 <artifactId>jdb-jdbc</artifactId>
                 <version>0.1.0</version>
             </dependency>
-            <dependency>
-                <groupId>ru.strict</groupId>
-                <artifactId>jdb-spring</artifactId>
-                <version>0.1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>ru.strict</groupId>
-                <artifactId>jdb-hibernate</artifactId>
-                <version>0.1.0</version>
-            </dependency>
 
             <dependency>
                 <groupId>ru.strict</groupId>
-                <artifactId>services</artifactId>
+                <artifactId>db</artifactId>
                 <version>0.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
-                <artifactId>db</artifactId>
+                <artifactId>services</artifactId>
                 <version>0.0.1</version>
             </dependency>
 

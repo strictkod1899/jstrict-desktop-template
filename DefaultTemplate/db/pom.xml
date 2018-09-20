@@ -24,10 +24,6 @@
 		</dependency>
 		<dependency>
 			<groupId>ru.strict</groupId>
-			<artifactId>jfile</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>ru.strict</groupId>
 			<artifactId>jdb-core</artifactId>
 		</dependency>
 		<dependency>
