@@ -6,19 +6,14 @@
 
     <parent>
         <groupId>ru.strict</groupId>
-        <artifactId>jstrict</artifactId>
+        <artifactId>jdb</artifactId>
         <version>0.1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>jdb</artifactId>
+    <artifactId>jdb-core</artifactId>
     <version>0.1.0</version>
-    <packaging>pom</packaging>
-    <name>jdb</name>
+    <packaging>jar</packaging>
+    <name>jdb-core</name>
     <url>http:\\maven.apache.org</url>
-
-    <modules>
-    	<module>jdb-core</module>
-    	<module>jdb-jdbc</module>
-    </modules>
 </project>

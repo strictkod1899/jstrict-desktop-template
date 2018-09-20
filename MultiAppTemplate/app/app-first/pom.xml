@@ -20,12 +20,18 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<dependencies>
 		<dependency>
 			<groupId>ru.strict</groupId>
-			<artifactId>services</artifactId>
+			<artifactId>jutils</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>ru.strict</groupId>
 			<artifactId>jswing</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>ru.strict</groupId>
+			<artifactId>services</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 	    	<artifactId>junit</artifactId>
@@ -33,6 +39,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	</dependencies>
 
 	<build>
+		<finalName>app-first</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
