@@ -26,6 +26,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<plugin.dependency.version>2.5.1</plugin.dependency.version>
 		<plugin.surefire.version>2.12.4</plugin.surefire.version>
 		<plugin.war.version>3.2.0</plugin.war.version>
+        	<plugin.assembly.version>2.6</plugin.assembly.version>
 	</properties>
 
     <repositories>
