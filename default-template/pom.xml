@@ -31,6 +31,10 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <plugin.google.findbugs.version>3.0.1</plugin.google.findbugs.version>
         <plugin.info.report.version>2.7</plugin.info.report.version>
         <plugin.xml.version>1.0.2</plugin.xml.version>
+
+        <app.name>myproject</app.name>
+        <launch4j.copyright>jstrict</launch4j.copyright>
+        <launch4j.jdk.version>1.8.0</launch4j.jdk.version>
 	</properties>
 
     <repositories>

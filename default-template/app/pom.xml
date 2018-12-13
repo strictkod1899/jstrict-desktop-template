@@ -51,7 +51,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	</dependencies>
 
 	<build>
-		<finalName>myproject</finalName>
+		<finalName>${app.name}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -217,6 +217,49 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                         <version>${plugin.google.findbugs.version}</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <version>1.7.16</version>
+                <executions>
+                    <execution>
+                        <id>l4j-clui</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <headerType>console</headerType>
+                            <outfile>target/${app.name}.exe</outfile>
+                            <jar>target/${app.name}.jar</jar>
+                            <icon>_sources/logo.ico</icon>
+                            <errTitle>encc</errTitle>
+                            <classPath>
+                                <mainClass>ru.strict.app.Main</mainClass>
+                                <addDependencies>true</addDependencies>
+                                <preCp>anything</preCp>
+                            </classPath>
+                            <jre>
+                                <minVersion>${launch4j.jdk.version}</minVersion>
+                                <opts>
+                                    <opt>-Djava.endorsed.dirs=./endorsed</opt>
+                                </opts>
+                            </jre>
+                            <versionInfo>
+                                <fileVersion>${project.version}.0</fileVersion>
+                                <txtFileVersion>${project.version}.0</txtFileVersion>
+                                <fileDescription>${app.name}</fileDescription>
+                                <copyright>${launch4j.copyright}</copyright>
+                                <productVersion>${project.version}.0</productVersion>
+                                <txtProductVersion>${project.version}.0</txtProductVersion>
+                                <productName>${app.name}</productName>
+                                <originalFilename>${app.name}.exe</originalFilename>
+                                <internalName>${app.name}</internalName>
+                            </versionInfo>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
