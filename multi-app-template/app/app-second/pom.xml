@@ -230,7 +230,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                         <configuration>
                             <headerType>console</headerType>
                             <outfile>target/${app.name}.exe</outfile>
-                            <jar>target/${app.name}.jar</jar>
+                            <jar>target/${app.name}-jar-with-dependencies.jar</jar>
                             <icon>_sources/logo.ico</icon>
                             <errTitle>encc</errTitle>
                             <classPath>
