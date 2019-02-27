@@ -21,16 +21,17 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk.version>1.8</jdk.version>
-        <plugin.compiler.version>2.5.1</plugin.compiler.version>
-        <plugin.jar.version>2.4</plugin.jar.version>
-        <plugin.site.version>3.3</plugin.site.version>
-        <plugin.dependency.version>2.5.1</plugin.dependency.version>
-        <plugin.surefire.version>2.12.4</plugin.surefire.version>
-        <plugin.assembly.version>2.6</plugin.assembly.version>
+        <plugin.compiler.version>3.8.0</plugin.compiler.version>
+        <plugin.jar.version>3.1.1</plugin.jar.version>
+        <plugin.dependency.version>3.1.1</plugin.dependency.version>
+        <plugin.surefire.version>2.22.1</plugin.surefire.version>
+        <plugin.assembly.version>3.1.1</plugin.assembly.version>
+        <plugin.site.version>3.7.1</plugin.site.version>
+        <!-- Нельзя указывать версию больше этой -->
+        <plugin.info.report.version>2.9</plugin.info.report.version>
         <plugin.cobertura.version>2.7</plugin.cobertura.version>
         <plugin.findbugs.version>3.0.5</plugin.findbugs.version>
         <plugin.google.findbugs.version>3.0.1</plugin.google.findbugs.version>
-        <plugin.info.report.version>2.7</plugin.info.report.version>
         <plugin.xml.version>1.0.2</plugin.xml.version>
         <plugin.launch4j.version>1.7.16</plugin.launch4j.version>
 
@@ -138,11 +139,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <version>${plugin.xml.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.akathist.maven.plugins.launch4j</groupId>
-            <artifactId>launch4j-maven-plugin</artifactId>
-            <version>${plugin.launch4j.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-project-info-reports-plugin</artifactId>
             <version>${plugin.info.report.version}</version>
@@ -159,4 +155,13 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <version>${plugin.findbugs.version}</version>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>${plugin.site.version}</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
