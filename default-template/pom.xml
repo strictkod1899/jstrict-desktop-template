@@ -29,8 +29,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <plugin.site.version>3.7.1</plugin.site.version>
         <!-- Нельзя указывать версию больше этой -->
         <plugin.info.report.version>2.9</plugin.info.report.version>
-        <plugin.cobertura.version>2.7</plugin.cobertura.version>
-        <plugin.findbugs.version>3.0.5</plugin.findbugs.version>
+        <plugin.jacoco.version>0.8.3</plugin.jacoco.version>
+        <plugin.spotbugs.version>3.1.11</plugin.spotbugs.version>
         <plugin.google.findbugs.version>3.0.1</plugin.google.findbugs.version>
         <plugin.xml.version>1.0.2</plugin.xml.version>
         <plugin.launch4j.version>1.7.16</plugin.launch4j.version>
@@ -144,15 +144,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <version>${plugin.info.report.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>${plugin.cobertura.version}</version>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>${plugin.jacoco.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>findbugs-maven-plugin</artifactId>
-            <version>${plugin.findbugs.version}</version>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs-maven-plugin</artifactId>
+            <version>${plugin.spotbugs.version}</version>
         </dependency>
     </dependencies>
     <build>
