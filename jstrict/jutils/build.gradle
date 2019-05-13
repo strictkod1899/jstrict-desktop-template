@@ -1,0 +1,6 @@
+version = JSTRICT_VERSION
+
+jar{
+    baseName = 'jutils'
+    manifest.attributes('Class-Path': configurations.runtime.files.collect { "libs/$it.name"}.join(' '))
+}

@@ -1,0 +1,11 @@
+dependencies{
+    compile group: PROJECT_GROUP, name: 'jutils', version: JSTRICT_VERSION
+    compile group: PROJECT_GROUP, name: 'jswing', version: JSTRICT_VERSION
+    compile group: PROJECT_GROUP, name: 'services', version: PROJECT_VERSION
+}
+
+jar{
+    baseName = 'app'
+    manifest.attributes('Main-Class': 'ru.strict.app.Main');
+    manifest.attributes('Class-Path': configurations.runtime.files.collect { "libs/$it.name"}.join(' '))
+}
