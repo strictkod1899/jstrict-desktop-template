@@ -1,7 +1,9 @@
 dependencies{
     compile group: PROJECT_GROUP, name: 'jutils', version: JSTRICT_VERSION
     compile group: PROJECT_GROUP, name: 'jdb-core', version: JSTRICT_VERSION
+    compile group: PROJECT_GROUP, name: 'jdb-models', version: JSTRICT_VERSION
     compile group: PROJECT_GROUP, name: 'jdb-jdbc', version: JSTRICT_VERSION
+    compile group: PROJECT_GROUP, name: 'models', version: PROJECT_VERSION
 }
 
 jar{
