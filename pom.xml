@@ -36,6 +36,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <plugin.xml.version>1.0.2</plugin.xml.version>
         <plugin.launch4j.version>1.7.16</plugin.launch4j.version>
 
+        <jstrict.version>0.1.0</jstrict.version>
+
         <app.name>myproject</app.name>
         <launch4j.copyright>jstrict</launch4j.copyright>
         <launch4j.jdk.version>1.8.0</launch4j.jdk.version>
@@ -54,53 +56,53 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>jutils</artifactId>
-                <version>0.1.0</version>
+                <version>${jstrict.version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>jpatterns</artifactId>
-                <version>0.1.0</version>
+                <version>${jstrict.version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>jfile</artifactId>
-                <version>0.1.0</version>
+                <version>${jstrict.version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>jswing</artifactId>
-                <version>0.1.0</version>
+                <version>${jstrict.version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>jdb-core</artifactId>
-                <version>0.1.0</version>
+                <version>${jstrict.version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>jdb-models</artifactId>
-                <version>0.1.0</version>
+                <version>${jstrict.version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>jdb-jdbc</artifactId>
-                <version>0.1.0</version>
+                <version>${jstrict.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>models</artifactId>
-                <version>0.0.1</version>
+                <version>${version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>db</artifactId>
-                <version>0.0.1</version>
+                <version>${version}</version>
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>services</artifactId>
-                <version>0.0.1</version>
+                <version>${version}</version>
             </dependency>
 
             <dependency>
