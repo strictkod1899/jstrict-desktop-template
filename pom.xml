@@ -14,6 +14,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modules>
 		<module>app</module>
 		<module>services</module>
+		<module>models</module>
 		<module>db</module>
 		<module>jstrict</module>
 	</modules>
@@ -77,10 +78,20 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
+                <artifactId>jdb-models</artifactId>
+                <version>0.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>ru.strict</groupId>
                 <artifactId>jdb-jdbc</artifactId>
                 <version>0.1.0</version>
             </dependency>
 
+            <dependency>
+                <groupId>ru.strict</groupId>
+                <artifactId>models</artifactId>
+                <version>0.0.1</version>
+            </dependency>
             <dependency>
                 <groupId>ru.strict</groupId>
                 <artifactId>db</artifactId>

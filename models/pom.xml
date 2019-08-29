@@ -1,52 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <parent>
-    	<groupId>ru.strict</groupId>
-        <artifactId>myproject</artifactId>
-        <version>0.0.1</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
-
-    <artifactId>db</artifactId>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>ru.strict</groupId>
+    <artifactId>myproject</artifactId>
     <version>0.0.1</version>
-    <packaging>jar</packaging>
-    <name>db</name>
-    <url>http:\\maven.apache.org</url>
-
-	<dependencies>
-	    <dependency>
-			<groupId>ru.strict</groupId>
-			<artifactId>jutils</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>ru.strict</groupId>
-			<artifactId>jdb-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>ru.strict</groupId>
-			<artifactId>jdb-models</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>ru.strict</groupId>
-			<artifactId>jdb-jdbc</artifactId>
-		</dependency>
-		
-	    <dependency>
-			<groupId>ru.strict</groupId>
-			<artifactId>models</artifactId>
-		</dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-	</dependencies>
-
-    <build>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <artifactId>models</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+  <name>models</name>
+  <url>http:\\maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>ru.strict</groupId>
+      <artifactId>jdb-models</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -86,7 +58,7 @@
                         <configuration>
                             <printSummary>true</printSummary>
                             <includes>
-                                <include>ru/strict/db/**</include>
+                                <include>ru/strict/models/**</include>
                             </includes>
                         </configuration>
                     </execution>

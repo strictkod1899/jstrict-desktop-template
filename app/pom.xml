@@ -26,10 +26,18 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<groupId>ru.strict</groupId>
 			<artifactId>jswing</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>ru.strict</groupId>
+			<artifactId>jdb-models</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>ru.strict</groupId>
 			<artifactId>services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ru.strict</groupId>
+			<artifactId>models</artifactId>
 		</dependency>
 
         <dependency>

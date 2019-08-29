@@ -34,10 +34,18 @@
             <groupId>ru.strict</groupId>
             <artifactId>jdb-core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ru.strict</groupId>
+            <artifactId>jdb-models</artifactId>
+        </dependency>
 
     	<dependency>
     		<groupId>ru.strict</groupId>
     		<artifactId>db</artifactId>
+    	</dependency>
+    	<dependency>
+    		<groupId>ru.strict</groupId>
+    		<artifactId>models</artifactId>
     	</dependency>
 
         <dependency>
