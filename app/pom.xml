@@ -47,13 +47,14 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	</dependencies>
 
 	<build>
-		<finalName>${app.name}</finalName>
+		<finalName>${app.name}-${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${plugin.compiler.version}</version>
 				<configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
 				</configuration>
