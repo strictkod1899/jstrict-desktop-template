@@ -1,6 +1,0 @@
-version = JSTRICT_VERSION
-
-jar{
-    baseName = 'jfile'
-    manifest.attributes('Class-Path': configurations.runtime.files.collect { "libs/$it.name"}.join(' '))
-}
