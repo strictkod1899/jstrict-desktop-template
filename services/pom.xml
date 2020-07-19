@@ -17,6 +17,16 @@
     <name>services</name>
 
     <dependencies>
+        <!-- app -->
+        <dependency>
+            <groupId>ru.strict.myproj</groupId>
+            <artifactId>db</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.strict.myproj</groupId>
+            <artifactId>models</artifactId>
+        </dependency>
+
         <!-- jstrict -->
         <dependency>
     		<groupId>ru.strict</groupId>
@@ -34,16 +44,6 @@
             <groupId>ru.strict</groupId>
             <artifactId>jdb-core</artifactId>
         </dependency>
-
-        <!-- app -->
-    	<dependency>
-    		<groupId>ru.strict.myproj</groupId>
-    		<artifactId>db</artifactId>
-    	</dependency>
-    	<dependency>
-    		<groupId>ru.strict.myproj</groupId>
-    		<artifactId>models</artifactId>
-    	</dependency>
 
         <!-- test -->
         <dependency>

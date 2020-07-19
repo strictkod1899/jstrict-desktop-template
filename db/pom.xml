@@ -17,6 +17,12 @@
     <name>db</name>
 
     <dependencies>
+        <!-- app -->
+        <dependency>
+            <groupId>ru.strict.myproj</groupId>
+            <artifactId>models</artifactId>
+        </dependency>
+
         <!-- jstrict -->
         <dependency>
             <groupId>ru.strict</groupId>
@@ -37,12 +43,6 @@
         <dependency>
             <groupId>ru.strict</groupId>
             <artifactId>jdb-jdbc</artifactId>
-        </dependency>
-
-        <!-- app -->
-        <dependency>
-            <groupId>ru.strict.myproj</groupId>
-            <artifactId>models</artifactId>
         </dependency>
 
         <!-- test -->

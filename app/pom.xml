@@ -21,6 +21,16 @@
     </properties>
 
     <dependencies>
+        <!-- app -->
+        <dependency>
+            <groupId>ru.strict.myproj</groupId>
+            <artifactId>services</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.strict.myproj</groupId>
+            <artifactId>models</artifactId>
+        </dependency>
+
         <!-- jstrict -->
         <dependency>
             <groupId>ru.strict</groupId>
@@ -41,16 +51,6 @@
         <dependency>
             <groupId>ru.strict</groupId>
             <artifactId>jfx</artifactId>
-        </dependency>
-
-        <!-- app -->
-        <dependency>
-            <groupId>ru.strict.myproj</groupId>
-            <artifactId>services</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ru.strict.myproj</groupId>
-            <artifactId>models</artifactId>
         </dependency>
 
         <!-- test -->
